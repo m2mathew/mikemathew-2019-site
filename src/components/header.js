@@ -5,11 +5,58 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#fafafa`,
       marginBottom: `1.45rem`,
+      borderBottom: '1px solid lightgrey',
+      position: 'fixed',
+      top: 0,
+      right: 0,
+      left: 0,
     }}
   >
-    <div
+    <nav
+      style={{
+        borderTop: '20px solid #454174',
+        margin: '0 auto',
+        padding: '0 16px',
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+        }}
+      >
+        <ul
+          style={{
+            display: 'flex',
+            listStyle: 'none',
+          }}
+        >
+          <li
+            style={{
+              paddingLeft: 8,
+            }}
+          >
+            <Link to="//">home</Link>
+          </li>
+          <li
+            style={{
+              paddingLeft: 8,
+            }}
+          >
+            <Link to="/resume/">resume</Link>
+          </li>
+          <li
+            style={{
+              paddingLeft: 8,
+            }}
+          >
+            <Link to="/speaking/">speaking</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {/* <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +74,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </div> */}
   </header>
 )
 
