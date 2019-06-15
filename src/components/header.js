@@ -1,5 +1,4 @@
 // External Dependencies
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -13,10 +12,10 @@ const Header = ({ siteTitle }) => (
       background: `#fafafa`,
       borderBottom: '1px solid #ddd',
       borderTop: '20px solid #454174',
+      boxSizing: 'border-box',
       left: 0,
       margin: '0 auto',
       marginBottom: `1.45rem`,
-      padding: '0 16px',
       position: 'fixed',
       right: 0,
       top: 0,
@@ -25,7 +24,9 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        alignItems: 'flex-end',
         display: 'flex',
+        height: 52,
       }}
     >
       <ul
