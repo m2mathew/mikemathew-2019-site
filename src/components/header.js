@@ -6,15 +6,16 @@ const Header = ({ siteTitle }) => (
   <nav
     style={{
       background: `#fafafa`,
-      marginBottom: `1.45rem`,
       borderBottom: '1px solid #ddd',
-      position: 'fixed',
-      top: 0,
-      right: 0,
-      left: 0,
       borderTop: '20px solid #454174',
+      left: 0,
       margin: '0 auto',
+      marginBottom: `1.45rem`,
       padding: '0 16px',
+      position: 'fixed',
+      right: 0,
+      top: 0,
+      zIndex: 250,
     }}
   >
     <div
