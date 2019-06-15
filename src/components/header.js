@@ -1,7 +1,12 @@
+// External Dependencies
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+// Internal Dependencies
+import NavLink from './nav-link';
+
+// Component Definition
 const Header = ({ siteTitle }) => (
   <nav
     style={{
@@ -26,32 +31,20 @@ const Header = ({ siteTitle }) => (
       <ul
         style={{
           display: 'flex',
-          fontSize: '1.25rem',
+          fontSize: '18px',
           listStyle: 'none',
           margin: 0,
         }}
       >
-        <li
-          style={{
-            paddingLeft: 8,
-          }}
-        >
-          <Link to="/">home</Link>
-        </li>
-        <li
-          style={{
-            paddingLeft: 8,
-          }}
-        >
-          <Link to="/resume/">resume</Link>
-        </li>
-        <li
-          style={{
-            paddingLeft: 8,
-          }}
-        >
-          <Link to="/speaking/">speaking</Link>
-        </li>
+        <NavLink to="/">
+          home
+        </NavLink>
+        <NavLink to="/resume/">
+          resume
+        </NavLink>
+        <NavLink to="/speaking/">
+          speaking
+        </NavLink>
       </ul>
     </div>
   </nav>
