@@ -15,7 +15,7 @@ import {
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import Header from './header';
+import TopNav from './top-nav';
 import './layout.css';
 
 // Local Variables
@@ -46,7 +46,7 @@ const Layout = (props) => {
       `}
       render={data => (
         <>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          <TopNav siteTitle={data.site.siteMetadata.title} />
           <div className={classes.container}>
             <main>{children}</main>
             <footer>

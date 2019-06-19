@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 });
 
 // Component Definition
-const Header = (props) => {
+const TopNav = (props) => {
   const classes = useStyles(props);
   return (
     <nav className={classes.root}>
@@ -56,7 +56,7 @@ const Header = (props) => {
   );
 };
 
-Header.propTypes = {
+TopNav.propTypes = {
   classes: PropTypes.shape({
     linkContainer: PropTypes.string.isRequired,
     list: PropTypes.string.isRequired,
@@ -64,4 +64,4 @@ Header.propTypes = {
   }),
 }
 
-export default Header;
+export default TopNav;

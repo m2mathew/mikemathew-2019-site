@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const Speaking = () => (
   <Layout>
     <SEO title="Speaking" />
-    <h1>Resume</h1>
+    <h1>Speaking</h1>
     <p>Sometimes Mike talks</p>
   </Layout>
 )
