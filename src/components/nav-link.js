@@ -1,7 +1,8 @@
 // External Dependencies
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import { makeStyles } from '@material-ui/styles';
 
 // Local Variables
 const propTypes = {
@@ -9,26 +10,39 @@ const propTypes = {
   to: PropTypes.string.isRequired,
 };
 
+const useStyles = makeStyles({
+  active: {
+    borderBottom: '2px solid hotpink',
+  },
+  link: {
+    paddingBottom: '0.25rem',
+    textDecoration: 'none',
+  },
+  root: {
+    paddingLeft: 32,
+  },
+});
+
 // Component Definition
-const NavLink = ({
-  children,
-  to,
-}) => (
-  <li
-    style={{
-      paddingLeft: 32,
-    }}
-  >
-    <Link
-      style={{
-        textDecoration: 'none',
-      }}
-      to={to}
-    >
-      {children}
-    </Link>
-  </li>
-);
+function NavLink(props) {
+  const {
+    children,
+    to,
+  } = props;
+
+  const classes = useStyles(props);
+  return (
+    <li className={classes.root}>
+      <Link
+        activeClassName={classes.active}
+        className={classes.link}
+        to={to}
+      >
+        {children}
+      </Link>
+    </li>
+  )
+}
 
 NavLink.propTypes = propTypes;
 
