@@ -15,7 +15,7 @@ import {
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import TopNav from './top-nav';
+import TopNav from './TopNav';
 import './layout.css';
 
 // Local Variables

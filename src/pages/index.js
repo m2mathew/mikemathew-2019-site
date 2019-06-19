@@ -3,8 +3,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Header from '../components/Header';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
 
 // Local Variables
 const useStyles = makeStyles({
@@ -20,9 +21,10 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1 className={classes.title}>
+      {/* <h1 className={classes.title}>
         Hi people
-      </h1>
+      </h1> */}
+      <Header />
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
     </Layout>
