@@ -15,6 +15,9 @@ const useStyles = makeStyles({
     borderBottom: '2px solid hotpink',
   },
   link: {
+    '&:hover': {
+      borderBottom: '1px solid pink',
+    },
     paddingBottom: '0.25rem',
     textDecoration: 'none',
   },
@@ -31,6 +34,7 @@ function NavLink(props) {
   } = props;
 
   const classes = useStyles(props);
+
   return (
     <li className={classes.root}>
       <Link
