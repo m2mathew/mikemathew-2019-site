@@ -32,6 +32,7 @@ const useStyles = makeStyles({
 const Layout = (props) => {
   const { children } = props;
   const classes = useStyles(props);
+
   return (
     <StaticQuery
       query={graphql`
@@ -62,4 +63,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;

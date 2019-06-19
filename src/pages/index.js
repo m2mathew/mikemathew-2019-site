@@ -1,19 +1,32 @@
-import React from "react"
+// External Dependencies
+import React from 'react';
+import { makeStyles } from '@material-ui/styles';
 
-import Layout from "../components/layout"
-import Image from "../components/images/astronaut-image"
-import SEO from "../components/seo"
+// Internal Dependencies
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-  </Layout>
-)
+// Local Variables
+const useStyles = makeStyles({
+  title: {
+    color: 'rebeccapurple',
+  },
+});
 
-export default IndexPage
+// Component Definition
+const IndexPage = (props) => {
+  const classes = useStyles(props);
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1 className={classes.title}>
+        Hi people
+      </h1>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+    </Layout>
+  );
+};
+
+export default IndexPage;
