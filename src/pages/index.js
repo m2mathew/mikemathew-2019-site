@@ -3,9 +3,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import Header from '../components/Header';
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Header from '../components/header';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 // Local Variables
 const useStyles = makeStyles({

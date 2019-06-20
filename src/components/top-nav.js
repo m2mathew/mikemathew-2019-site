@@ -4,7 +4,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import NavLink from './NavLink';
+import NavLink from './nav-link';
 
 // Local Variables
 const useStyles = makeStyles({
