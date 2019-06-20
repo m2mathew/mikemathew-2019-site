@@ -1,4 +1,4 @@
- // External Dependencies
+// External Dependencies
 import React from 'react';
 
 // Internal Dependencies

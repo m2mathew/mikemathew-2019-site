@@ -62,6 +62,6 @@ TopNav.propTypes = {
     list: PropTypes.string.isRequired,
     root: PropTypes.string.isRequired,
   }),
-}
+};
 
 export default TopNav;
