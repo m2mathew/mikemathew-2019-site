@@ -1,34 +1,34 @@
 module.exports = {
   siteMetadata: {
-    title: `Mike Mathew Portfolio`,
-    description: `A curated collection of some work from Mike Mathew.`,
-    author: `@m2mathew`,
+    title: 'Mike Mathew Portfolio',
+    description: 'A curated collection of some work from Mike Mathew.',
+    author: '@m2mathew',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-top-layout',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-plugin-material-ui`,
+      resolve: 'gatsby-plugin-material-ui',
       // If you want to use styled components, in conjunction to Material-UI, you should:
       // - Change the injection order
       // - Add the plugin
@@ -39,16 +39,9 @@ module.exports = {
       },
       // 'gatsby-plugin-styled-components',
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Open Sans:200,300,400', 'Source Sans Pro:400,700,900']
-        }
-      }
-    },
+    'gatsby-plugin-react-helmet',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // 'gatsby-plugin-offline',
   ],
-}
+};
