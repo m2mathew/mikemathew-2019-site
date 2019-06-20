@@ -1,6 +1,7 @@
 // External Dependencies
 import PropTypes from 'prop-types';
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 
 // Local Variables
@@ -31,7 +32,12 @@ const Header = (props) => {
   const classes = useStyles(props);
   return (
     <div>
-      <h1 className={classes.title}>Mike Mathew</h1>
+      <Typography
+        className={classes.title}
+        variant="h1"
+      >
+        Mike Mathew
+      </Typography>
     </div>
   );
 };
