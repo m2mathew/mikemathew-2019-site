@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
 import Header from '../components/header';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 // Local Variables
@@ -19,15 +18,12 @@ const IndexPage = (props) => {
   const classes = useStyles(props);
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
-      {/* <h1 className={classes.title}>
-        Hi people
-      </h1> */}
       <Header />
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
-    </Layout>
+    </>
   );
 };
 

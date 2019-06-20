@@ -1,7 +1,7 @@
 // External Dependencies
-import PropTypes from "prop-types"
-import React from "react"
-import { Link } from "gatsby"
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'gatsby';
 import { makeStyles } from '@material-ui/styles';
 
 // Local Variables

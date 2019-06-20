@@ -6,17 +6,16 @@ import {
   graphql,
 } from 'gatsby';
 import {
-  ThemeProvider,
-  createMuiTheme,
+  // ThemeProvider,
+  // createMuiTheme,
   makeStyles,
 } from '@material-ui/styles';
 
 // Internal Dependencies
-import TopNav from './TopNav';
 import './layout.css';
 
 // Local Variables
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(theme => !console.log('theme: ', theme) && ({
   container: {
     [theme.breakpoints.down('sm')]: {
       width: '90%',
@@ -51,17 +50,9 @@ const Content = (props) => {
         }
       `}
       render={data => (
-        <>
-          <ThemeProvider theme={createMuiTheme()}>
-            <TopNav siteTitle={data.site.siteMetadata.title} />
-            <div className={classes.container}>
-              <main>{children}</main>
-              <footer>
-                © {new Date().getFullYear()}{' '}Mike Mathew
-              </footer>
-            </div>
-          </ThemeProvider>
-        </>
+        <main className={classes.container}>
+          {children}
+        </main>
       )}
     />
   );
