@@ -6,6 +6,12 @@ import { makeStyles } from '@material-ui/styles';
 // Local Variables
 const useStyles = makeStyles({
   root: {
+    backgroundColor: '#CCC4EA',
+    borderTop: '5px solid #454174',
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1rem 0 0',
+    padding: '32px 0',
   },
 });
 
@@ -13,7 +19,7 @@ const useStyles = makeStyles({
 const Footer = (props) => {
   const classes = useStyles(props);
   return (
-    <footer>
+    <footer className={classes.root}>
       © {new Date().getFullYear()}{' '}Mike Mathew
     </footer>
   );
