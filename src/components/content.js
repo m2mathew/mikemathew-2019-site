@@ -6,8 +6,6 @@ import {
   graphql,
 } from 'gatsby';
 import {
-  // ThemeProvider,
-  // createMuiTheme,
   makeStyles,
 } from '@material-ui/styles';
 
@@ -15,7 +13,7 @@ import {
 import './layout.css';
 
 // Local Variables
-const useStyles = makeStyles(theme => !console.log('theme: ', theme) && ({
+const useStyles = makeStyles(theme => ({
   container: {
     [theme.breakpoints.down('sm')]: {
       width: '90%',
@@ -29,10 +27,7 @@ const useStyles = makeStyles(theme => !console.log('theme: ', theme) && ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    margin: '4.5em auto 0 auto',
-    // width: 960,
-    // padding: `0px 1.0875rem 1.45rem`,
-    // paddingTop: 0,
+    margin: '4.5rem auto 0 auto',
   },
 }));
 
