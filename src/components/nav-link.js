@@ -10,7 +10,7 @@ const propTypes = {
   to: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   active: {
     borderBottom: '2px solid hotpink',
   },
@@ -18,13 +18,14 @@ const useStyles = makeStyles({
     '&:hover': {
       borderBottom: '1px solid pink',
     },
+    color: theme.palette.common.black,
     paddingBottom: '0.25rem',
     textDecoration: 'none',
   },
   root: {
     paddingLeft: 32,
   },
-});
+}));
 
 // Component Definition
 function NavLink(props) {
@@ -45,7 +46,7 @@ function NavLink(props) {
         {children}
       </Link>
     </li>
-  )
+  );
 }
 
 NavLink.propTypes = propTypes;
