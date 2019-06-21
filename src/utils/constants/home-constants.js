@@ -1,7 +1,7 @@
 export const bioPhrases = [
   'How to make a front end developer named Mike',
   'Fall in love with learning',
-  'Geta TRS-80 from Uncle Ricky and learn to program in BASIC',
+  'Get a TRS-80 from Uncle Ricky and learn to program in BASIC',
   'Start hitting things with drumsticks',
   'Play lots of video games',
   'Take two years of Computer Sciene in high school using C++ and Turbo Pascal',

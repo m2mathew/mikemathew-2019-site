@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Mike Mathew Portfolio',
     description: 'A curated collection of some work from Mike Mathew.',
-    author: '@m2mathew',
+    author: 'Mike Mathew',
   },
   plugins: [
     'gatsby-plugin-top-layout',

@@ -21,9 +21,11 @@ const defaultProps = {
 
 const useStyles = makeStyles({
   bullet: {
-    margin: '0 4px',
+    margin: '0 10px',
   },
   root: {
+    fontSize: 20,
+    fontWeight: 200,
     textTransform: 'uppercase',
   },
   strong: {
@@ -49,6 +51,7 @@ const BioSegment = (props) => {
           strong && classes.strong,
         )
       }
+      component="span"
     >
       {!isFirst && <span className={classes.bullet}>&bull;</span>}
       {children}
