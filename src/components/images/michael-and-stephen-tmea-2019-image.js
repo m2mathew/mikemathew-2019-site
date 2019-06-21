@@ -14,11 +14,11 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const MathewFamilyApril2019Image = () => (
+const MichaelAndStephenTmea2019Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "mathew-family-april-2019.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "michael-and-stephen-tmea-2019.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
@@ -30,4 +30,4 @@ const MathewFamilyApril2019Image = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default MathewFamilyApril2019Image;
+export default MichaelAndStephenTmea2019Image;

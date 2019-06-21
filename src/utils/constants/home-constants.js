@@ -6,6 +6,7 @@ import DrumCorpsImage from '../../components/images/drum-corps-image';
 import IronYardAustinImage from '../../components/images/iron-yard-austin-image';
 import MathewFamilyApril2019Image from '../../components/images/mathew-family-april-2019-image';
 import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
+import MichaelAndStephenTmea2019Image from '../../components/images/michael-and-stephen-tmea-2019-image';
 import TrinityPasicImage from '../../components/images/trinity-pasic-image';
 
 // Local Variables
@@ -80,8 +81,8 @@ export const bioPhrases = [
   },
   {
     text: 'Become the guardian for your little brother',
-    image: '',
-    dialogText: '',
+    image: <MichaelAndStephenTmea2019Image />,
+    dialogText: 'Michael and Stephen meet up in the Exhibit Hall at the 2019 Texas Music Educators Association convention in San Antonio, TX. Stephen works as a Marketing Strategist for the Dynasty/Titan instrument company.',
   },
   {
     text: 'Start learning more code',

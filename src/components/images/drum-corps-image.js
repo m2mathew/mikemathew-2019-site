@@ -20,7 +20,7 @@ const DrumCorpsImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "drum-corps-crown-2000.jpeg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }

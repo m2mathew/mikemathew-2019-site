@@ -20,7 +20,7 @@ const IronYardAustinImage = () => (
       query {
         placeholderImage: file(relativePath: { eq: "iron-yard-austin.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
