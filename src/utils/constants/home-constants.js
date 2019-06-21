@@ -4,6 +4,7 @@ import React from 'react';
 // Internal Dependencies
 import DrumCorpsImage from '../../components/images/drum-corps-image';
 import IronYardAustinImage from '../../components/images/iron-yard-austin-image';
+import MathewFamilyApril2019Image from '../../components/images/mathew-family-april-2019-image';
 import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
 import TrinityPasicImage from '../../components/images/trinity-pasic-image';
 
@@ -70,8 +71,8 @@ export const bioPhrases = [
   },
   {
     text: 'Have three kids along the way',
-    image: null,
-    dialogText: '',
+    image: <MathewFamilyApril2019Image />,
+    dialogText: 'Isaac (b.2002), Alexis (b.2005), and Olivia (b.2012) bring their parents great joy. We have lots of laughter throughout our house!',
   },
   {
     text: 'Realize that you spend as much time formatting an email as teaching',
