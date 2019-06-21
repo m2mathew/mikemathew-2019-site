@@ -7,6 +7,8 @@ import IronYardAustinImage from '../../components/images/iron-yard-austin-image'
 import MathewFamilyApril2019Image from '../../components/images/mathew-family-april-2019-image';
 import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
 import MichaelAndStephenTmea2019Image from '../../components/images/michael-and-stephen-tmea-2019-image';
+import MikeThumbsUpImage from '../../components/images/mike-thumbs-up-image';
+import ReactMeetupMarch2016MikeImage from '../../components/images/react-meetup-march-2016-mike-image';
 import TrinityPasicImage from '../../components/images/trinity-pasic-image';
 
 // Local Variables
@@ -103,12 +105,12 @@ export const bioPhrases = [
   },
   {
     text: 'Work at an awesome company',
-    image: null,
-    dialogText: '',
+    image: <MikeThumbsUpImage />,
+    dialogText: 'At Call-Em-All I have learned and leveled up so much in my front end skills. The team created the popular open source library Material-UI, so I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
   },
   {
     text: 'Help others learn and stay connected',
-    image: null,
-    dialogText: '',
+    image: <ReactMeetupMarch2016MikeImage />,
+    dialogText: 'Since Feb 2016 I have been the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas. We routinely visit local companies like Intuit, Match, DevMountain, and several others. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
   },
 ];
