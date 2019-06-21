@@ -1,20 +1,25 @@
 // External Dependencies
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
 import { makeStyles } from '@material-ui/styles';
-
-// Internal Dependencies
 
 // Local Variables
 const propTypes = {
   children: PropTypes.string.isRequired,
+  dialogText: PropTypes.string,
+  image: PropTypes.element,
   isFirst: PropTypes.bool,
   strong: PropTypes.bool,
 };
 
 const defaultProps = {
+  dialogText: null,
+  image: null,
   isFirst: false,
   strong: false,
 };
@@ -37,11 +42,19 @@ const useStyles = makeStyles({
 const BioSegment = (props) => {
   const {
     children,
+    dialogText,
+    image,
     isFirst,
     strong,
   } = props;
 
   const classes = useStyles(props);
+
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  function toggleDialog() {
+    return setIsDialogOpen(!isDialogOpen);
+  }
 
   return (
     <Typography
@@ -54,7 +67,28 @@ const BioSegment = (props) => {
       component="span"
     >
       {!isFirst && <span className={classes.bullet}>&bull;</span>}
-      {children}
+      {image
+        ? (
+          <a href="#" onClick={toggleDialog}>
+            {children}
+          </a>
+        )
+        : children}
+      {image && (
+        <Dialog
+          fullWidth
+          maxWidth="md"
+          onClose={toggleDialog}
+          open={isDialogOpen}
+        >
+          <DialogContent>
+            {image}
+            <DialogContentText>
+              {dialogText}
+            </DialogContentText>
+          </DialogContent>
+        </Dialog>
+      )}
     </Typography>
   );
 };

@@ -23,29 +23,28 @@ const useStyles = makeStyles(theme => ({
 const IndexPage = (props) => {
   const classes = useStyles(props);
 
+  function getBioSegments(bioPhrases) {
+    return bioPhrases.map((phrase, index) => {
+      return (
+        <BioSegment
+          dialogText={phrase.dialogText}
+          image={phrase.image}
+          isFirst={index === 0}
+          key={`bio-${index}`}
+          strong={index === 0}
+        >
+          {phrase.text}
+        </BioSegment>
+      );
+    });
+  }
+
   return (
     <>
       <SEO title="Home" />
       <Header />
       <div className={classes.bioContainer}>
-        <BioSegment
-          isFirst
-          strong
-        >
-          {bioPhrases[0]}
-        </BioSegment>
-        {
-          bioPhrases.map((phrase, index) => {
-            if (index === 0) {
-              return null;
-            }
-            return (
-              <BioSegment>
-                {phrase}
-              </BioSegment>
-            );
-          })
-        }
+        {getBioSegments(bioPhrases)}
       </div>
     </>
   );
