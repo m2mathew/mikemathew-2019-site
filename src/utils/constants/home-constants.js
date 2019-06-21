@@ -5,6 +5,7 @@ import React from 'react';
 import DrumCorpsImage from '../../components/images/drum-corps-image';
 import IronYardAustinImage from '../../components/images/iron-yard-austin-image';
 import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
+import TrinityPasicImage from '../../components/images/trinity-pasic-image';
 
 // Local Variables
 export const bioPhrases = [
@@ -60,7 +61,8 @@ export const bioPhrases = [
   },
   {
     text: 'Convince students to work hard enough to win an international competition',
-    image: null,
+    image: <TrinityPasicImage />,
+    dialogText: 'As winners of the International Percussion Ensemble Contest, my students at Trinity High School were invited to perform at the 2006 Percussive Arts Society International Convention in Austin, Texas. We commissioned a new work for percussion ensemble from composer Dwayne Rice that we premiered at this concert where we featured the rock star percussionist Dr. Andrew Eldridge. The students played great, and we had a blast!',
   },
   {
     text: 'Make websites for your band programs',
@@ -69,6 +71,7 @@ export const bioPhrases = [
   {
     text: 'Have three kids along the way',
     image: null,
+    dialogText: '',
   },
   {
     text: 'Realize that you spend as much time formatting an email as teaching',
@@ -76,7 +79,8 @@ export const bioPhrases = [
   },
   {
     text: 'Become the guardian for your little brother',
-    image: null,
+    image: '',
+    dialogText: '',
   },
   {
     text: 'Start learning more code',
@@ -98,9 +102,11 @@ export const bioPhrases = [
   {
     text: 'Work at an awesome company',
     image: null,
+    dialogText: '',
   },
   {
     text: 'Help others learn and stay connected',
     image: null,
+    dialogText: '',
   },
 ];
