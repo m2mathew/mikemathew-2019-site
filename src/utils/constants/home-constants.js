@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Internal Dependencies
-// import AstronautImage from '../../components/images/astronaut-image';
 import DrumCorpsImage from '../../components/images/drum-corps-image';
+import IronYardAustinImage from '../../components/images/iron-yard-austin-image';
 import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
 
 // Local Variables
@@ -88,7 +88,8 @@ export const bioPhrases = [
   },
   {
     text: 'Enroll at a code school three hours from home',
-    image: null,
+    image: <IronYardAustinImage />,
+    dialogText: 'My time in code school at The Iron Yard- Austin was an immersive dive into front end coding and development. My instructor Aaron Larner always gave us the nudge we needed to solve problems ourselves. We also used Agile methodology for three projects and built applications on teams with back end and design students.',
   },
   {
     text: 'Keep learning and making awesome things',
