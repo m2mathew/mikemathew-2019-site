@@ -4,6 +4,7 @@ import React from 'react';
 // Internal Dependencies
 // import AstronautImage from '../../components/images/astronaut-image';
 import DrumCorpsImage from '../../components/images/drum-corps-image';
+import MichaelAndMelissaImage from '../../components/images/michael-and-melissa-image';
 
 // Local Variables
 export const bioPhrases = [
@@ -50,7 +51,8 @@ export const bioPhrases = [
   },
   {
     text: 'Get married to your high school sweetheart',
-    image: null,
+    image: <MichaelAndMelissaImage />,
+    dialogText: 'Melissa and I were married in December 2000 after dating since high school! Still going strong with a great family!',
   },
   {
     text: 'Graduate college and teach music for over a decade',
