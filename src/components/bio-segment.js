@@ -28,6 +28,12 @@ const useStyles = makeStyles({
   bullet: {
     margin: '0 10px',
   },
+  dialogContent: {
+    paddingTop: 24,
+  },
+  dialogText: {
+    marginTop: 16,
+  },
   root: {
     fontSize: 20,
     fontWeight: 200,
@@ -81,9 +87,9 @@ const BioSegment = (props) => {
           onClose={toggleDialog}
           open={isDialogOpen}
         >
-          <DialogContent>
+          <DialogContent className={classes.dialogContent}>
             {image}
-            <DialogContentText>
+            <DialogContentText className={classes.dialogText}>
               {dialogText}
             </DialogContentText>
           </DialogContent>

@@ -2,7 +2,8 @@
 import React from 'react';
 
 // Internal Dependencies
-import AstronautImage from '../../components/images/astronaut-image';
+// import AstronautImage from '../../components/images/astronaut-image';
+import DrumCorpsImage from '../../components/images/drum-corps-image';
 
 // Local Variables
 export const bioPhrases = [
@@ -40,8 +41,8 @@ export const bioPhrases = [
   },
   {
     text: 'Tour and perform with a drum and bugle corps',
-    image: <AstronautImage />,
-    dialogText: 'I marched with the Troopers in 1996 and Carolina Crown in 2000(pictured, far right), both playing quads in the drum line.This experience is unlike anything else.We traveled on charter buses for a summer and stayed in high schools in each city.It is kind of like the army meets marching band.',
+    image: <DrumCorpsImage />,
+    dialogText: 'I performed with the Troopers in 1996 and Carolina Crown in 2000 (pictured, far right, in Montreal), both playing quads in the drum line. This experience is unlike anything else. We traveled on charter buses for a summer and stayed in high schools in each city. Imagine the army meets marching band.',
   },
   {
     text: 'Spend equal time writing music as performing it',
