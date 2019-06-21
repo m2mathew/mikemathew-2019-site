@@ -3,8 +3,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
+import BioSegment from '../components/bio-segment';
 import Header from '../components/header';
 import SEO from '../components/seo';
+import { bioPhrases } from '../utils/constants/home-constants';
 
 // Local Variables
 const useStyles = makeStyles({
@@ -21,8 +23,14 @@ const IndexPage = (props) => {
     <>
       <SEO title="Home" />
       <Header />
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <div>
+        <BioSegment
+          isFirst
+          strong
+        >
+          {bioPhrases[0]}
+        </BioSegment>
+      </div>
     </>
   );
 };
