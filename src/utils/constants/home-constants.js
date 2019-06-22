@@ -34,7 +34,7 @@ export const bioPhrases = [
     image: null,
   },
   {
-    text: 'Take two years of Computer Sciene in high school using C++ and Turbo Pascal',
+    text: 'Take two years of Computer Science in high school using C++ and Turbo Pascal',
     image: null,
   },
   {
@@ -106,11 +106,11 @@ export const bioPhrases = [
   {
     text: 'Work at an awesome company',
     image: <MikeThumbsUpImage />,
-    dialogText: 'At Call-Em-All I have learned and leveled up so much in my front end skills. The team created the popular open source library Material-UI, so I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
+    dialogText: 'At Call-Em-All I have learned and leveled up in my front end skills. The team created the popular open source library Material-UI, so I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
   },
   {
     text: 'Help others learn and stay connected',
     image: <ReactMeetupMarch2016MikeImage />,
-    dialogText: 'Since Feb 2016 I have been the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas. We routinely visit local companies like Intuit, Match, DevMountain, and several others. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
+    dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas. We routinely visit local companies like Intuit, Match, DevMountain, and several others. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
   },
 ];

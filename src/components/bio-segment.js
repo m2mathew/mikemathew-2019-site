@@ -83,12 +83,14 @@ const BioSegment = (props) => {
       {image && (
         <Dialog
           fullWidth
-          maxWidth="md"
+          maxWidth="sm"
           onClose={toggleDialog}
           open={isDialogOpen}
         >
           <DialogContent className={classes.dialogContent}>
-            {image}
+            <div>
+              {image}
+            </div>
             <DialogContentText className={classes.dialogText}>
               {dialogText}
             </DialogContentText>
