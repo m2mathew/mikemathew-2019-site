@@ -125,7 +125,7 @@ const Resume = (props) => {
           Presto Assistant
         </Typography>
         <Typography className={classes.indent}>
-          Presto is built to help fine arts teachers organize their administrative tasks. The parents and students and administrators can also use Presto to access data about the programs and pay fees. We hope to bring some joy to teachers and enable them to spend more time teaching!
+          Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. We hope to bring some joy to teachers and enable them to spend more time teaching!
         </Typography>
         <Typography
           className={classes.subtitle}
@@ -152,7 +152,7 @@ const Resume = (props) => {
           Drumr
         </Typography>
         <Typography className={classes.indent}>
-          Now defunct, alas. Drumr was my final project at The Iron Yard code school. It used React, Backbone, Parse, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
+          Now defunct, alas. Drumr was my final project at The Iron Yard code school. It used React, Backbone, Parse, Sass, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
         </Typography>
         <Typography
           className={classes.subtitle}
