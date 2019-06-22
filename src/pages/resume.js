@@ -143,7 +143,7 @@ const Resume = (props) => {
           Drumsensei.com
         </Typography>
         <Typography className={classes.indent}>
-          Personal blog site launched in June 2015. Rarely maintained. <span>😕</span>
+          Personal blog site launched in June 2015. Rarely maintained, but a new version is "under construction". <span>😕</span>
         </Typography>
         <Typography
           className={classes.subtitle}
@@ -152,7 +152,7 @@ const Resume = (props) => {
           Drumr
         </Typography>
         <Typography className={classes.indent}>
-          Now defunct, alas. Drumr was written using React, Parse, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
+          Now defunct, alas. Drumr was my final project at The Iron Yard code school. It used React, Backbone, Parse, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
         </Typography>
         <Typography
           className={classes.subtitle}
@@ -161,7 +161,7 @@ const Resume = (props) => {
           The Mathew Group
         </Typography>
         <Typography className={classes.indent}>
-          From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver CMS and basic HTML and CSS. I loved it!
+          From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver CMS and basic HTML and CSS. This is what got me hooked on making internet websites!
         </Typography>
       </ResumeSection>
     </>
