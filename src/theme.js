@@ -13,7 +13,6 @@ let theme = createMuiTheme({
   },
 });
 
-
 // This gives us some default responsive font sizes
 theme = responsiveFontSizes(theme);
 

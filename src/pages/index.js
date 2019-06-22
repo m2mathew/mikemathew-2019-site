@@ -16,6 +16,9 @@ const useStyles = makeStyles(theme => ({
     padding: '16px 0',
     textAlign: 'justify',
   },
+  wave: {
+    width: '100%',
+  },
 }));
 
 // Component Definition
@@ -42,7 +45,7 @@ const IndexPage = (props) => {
     <>
       <SEO title="Home" />
       <Header />
-      <div>
+      <div className={classes.wave}>
         <svg viewBox="0 0 1440 64" width="100%">
           <path
             fill="rebeccapurple"
