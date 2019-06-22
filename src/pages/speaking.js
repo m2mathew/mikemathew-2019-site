@@ -9,7 +9,10 @@ import SpeakingSection from '../components/speaking-section';
 // Local Variables
 const useStyles = makeStyles({
   emoji: {
-    marginLeft: 48,
+    fontSize: 24,
+    display: 'inline-block',
+    marginTop: 12,
+    transform: 'rotate(15deg)',
   },
 });
 
@@ -24,8 +27,10 @@ const Speaking = (props) => {
       <SpeakingSection
         title="Upcoming"
       >
-        Send me a note if you need a speaker who is engaging, informed, inclusive, and has a cool backpack.
-        <span className={classes.emoji}>🤓</span>
+        Send me a note if you need a speaker who is engaging, informed, inclusive, has a cool backpack, and always travels with drumsticks at the ready.
+        <div>
+          <span className={classes.emoji}>🤓</span>
+        </div>
       </SpeakingSection>
       <SpeakingSection
         title="Recent"

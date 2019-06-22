@@ -111,6 +111,6 @@ export const bioPhrases = [
   {
     text: 'Help others learn and stay connected',
     image: <ReactMeetupMarch2016MikeImage />,
-    dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas. We routinely visit local companies like Intuit, Match, DevMountain, and several others. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
+    dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas where we routinely visit local companies like Intuit, Match, DevMountain. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
   },
 ];
