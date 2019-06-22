@@ -100,10 +100,6 @@ export const bioPhrases = [
     dialogText: 'My time in code school at The Iron Yard- Austin was an immersive dive into front end coding and development. My instructor Aaron Larner always gave us the nudge we needed to solve problems ourselves. We also used Agile methodology for three projects and built applications on teams with back end and design students.',
   },
   {
-    text: 'Keep learning and making awesome things',
-    image: null,
-  },
-  {
     text: 'Work at an awesome company',
     image: <MikeThumbsUpImage />,
     dialogText: 'At Call-Em-All I have learned and leveled up in my front end skills. The team created the popular open source library Material-UI, so I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
@@ -112,5 +108,9 @@ export const bioPhrases = [
     text: 'Help others learn and stay connected',
     image: <ReactMeetupMarch2016MikeImage />,
     dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas where we routinely visit local companies like Intuit, Match, DevMountain. Our members love to connect with each other over code and pizza. Our group has helped a lot of people find jobs, too!',
+  },
+  {
+    text: 'Keep learning and making awesome things',
+    image: null,
   },
 ];

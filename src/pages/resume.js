@@ -122,19 +122,19 @@ const Resume = (props) => {
           className={classes.subtitle}
           variant="subtitle1"
         >
-          Texas Music Administrators Conference
+          Presto Assistant
         </Typography>
         <Typography className={classes.indent}>
-          In 2018 I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it!
+          Presto is built to help fine arts teachers organize their administrative tasks. The parents and students and administrators can also use Presto to access data about the programs and pay fees. We hope to bring some joy to teachers and enable them to spend more time teaching!
         </Typography>
         <Typography
           className={classes.subtitle}
           variant="subtitle1"
         >
-          Presto Assistant
+          Texas Music Administrators Conference
         </Typography>
         <Typography className={classes.indent}>
-          Presto is built to help fine arts teachers organize their administrative tasks. The parents and students and administrators can also use Presto to access data about the programs and pay fees. We hope to bring some joy to teachers and enable them to spend more time teaching!
+          In 2018 I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it!
         </Typography>
         <Typography
           className={classes.subtitle}

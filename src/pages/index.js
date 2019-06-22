@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/styles';
 import BioSegment from '../components/bio-segment';
 import Header from '../components/header';
 import SEO from '../components/seo';
+import Subtitle from '../components/subtitle';
 import { bioPhrases } from '../utils/constants/home-constants';
 
 // Local Variables
@@ -13,6 +14,7 @@ const useStyles = makeStyles(theme => ({
   bioContainer: {
     borderBottom: `10px solid ${theme.palette.grey[500]}`,
     lineHeight: 3,
+    marginBottom: 24,
     padding: '16px 0',
     textAlign: 'justify',
   },
@@ -30,7 +32,7 @@ const IndexPage = (props) => {
           image={phrase.image}
           isFirst={index === 0}
           key={`bio-${index}`}
-          strong={index === 0}
+          strong={index === 0 || (index === bioPhrases.length - 1)}
         >
           {phrase.text}
         </BioSegment>
@@ -45,6 +47,7 @@ const IndexPage = (props) => {
       <div className={classes.bioContainer}>
         {getBioSegments(bioPhrases)}
       </div>
+      <Subtitle>Some of my work</Subtitle>
     </>
   );
 };

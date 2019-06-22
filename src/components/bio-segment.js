@@ -29,6 +29,7 @@ const defaultProps = {
 
 const useStyles = makeStyles({
   bullet: {
+    fontWeight: 400,
     margin: '0 10px',
   },
   dialogContent: {
