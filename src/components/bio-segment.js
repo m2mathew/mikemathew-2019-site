@@ -8,6 +8,9 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import { makeStyles } from '@material-ui/styles';
 
+// Internal Dependencies
+import Link from './link';
+
 // Local Variables
 const propTypes = {
   children: PropTypes.string.isRequired,
@@ -75,9 +78,12 @@ const BioSegment = (props) => {
       {!isFirst && <span className={classes.bullet}>&bull;</span>}
       {image
         ? (
-          <a href="#" onClick={toggleDialog}>
+          <Link
+            // href="#"
+            onClick={toggleDialog}
+          >
             {children}
-          </a>
+          </Link>
         )
         : children}
       {image && (
