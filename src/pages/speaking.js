@@ -1,8 +1,10 @@
 // External Dependencies
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
+import Header from '../components/header';
 import SEO from '../components/seo';
 import SpeakingSection from '../components/speaking-section';
 
@@ -14,6 +16,9 @@ const useStyles = makeStyles({
     marginTop: 12,
     transform: 'rotate(15deg)',
   },
+  subtitle: {
+    marginBottom: '2rem',
+  },
 });
 
 // Component Definition
@@ -22,8 +27,13 @@ const Speaking = (props) => {
   return (
     <>
       <SEO title="Speaking" />
-      <h1>Speaking</h1>
-      <p>Sometimes Mike talks</p>
+      <Header />
+      <Typography
+        className={classes.subtitle}
+        variant="h5"
+      >
+          Speaking
+      </Typography>
       <SpeakingSection
         title="Upcoming"
       >
