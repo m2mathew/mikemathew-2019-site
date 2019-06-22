@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/styles';
 import Header from '../components/header';
 import SEO from '../components/seo';
 import SpeakingSection from '../components/speaking-section';
+import Subtitle from '../components/subtitle';
 
 // Local Variables
 const useStyles = makeStyles({
@@ -15,9 +16,6 @@ const useStyles = makeStyles({
     display: 'inline-block',
     marginTop: 12,
     transform: 'rotate(15deg)',
-  },
-  subtitle: {
-    marginBottom: '2rem',
   },
 });
 
@@ -28,12 +26,7 @@ const Speaking = (props) => {
     <>
       <SEO title="Speaking" />
       <Header />
-      <Typography
-        className={classes.subtitle}
-        variant="h5"
-      >
-          Speaking
-      </Typography>
+      <Subtitle>Speaking</Subtitle>
       <SpeakingSection
         title="Upcoming"
       >
