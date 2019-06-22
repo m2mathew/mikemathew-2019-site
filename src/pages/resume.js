@@ -101,7 +101,7 @@ const Resume = (props) => {
           Texas A&amp;M University-Commerce - Commerce, Texas
         </Typography>
         <Typography className={classes.indent}>
-          Studies towards Master of Music Education (Summer 2009-2016)
+          Studies towards Master of Music Education (2009-2016)
         </Typography>
         <Typography className={classes.indent}>
           Bachelor of Science in Music Education (May 2002)
