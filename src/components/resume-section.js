@@ -1,32 +1,24 @@
 // External Dependencies
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 
 // Local Variables
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   root: {
-    backgroundColor: '#D4D8EE',
-    marginBottom: 16,
-    textTransform: 'uppercase',
+    margin: '16px 0',
+    padding: '0 24px 16px',
     width: '100%',
   },
-}));
+});
 
 // Component Definition
 const ResumeSection = (props) => {
-  const classes = useStyles(props);
   const { children } = props;
+  const classes = useStyles(props);
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography variant="h5">
-          {children}
-        </Typography>
-      </CardContent>
-    </Card>
+    <div className={classes.root}>
+      {children}
+    </div>
   );
 };
 
