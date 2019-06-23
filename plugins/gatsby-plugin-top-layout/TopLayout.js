@@ -23,6 +23,10 @@ export default function TopLayout(props) {
           type="text/css"
         />
         <link
+          href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap"
+          rel="stylesheet"
+        />
+        <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400|Source+Sans+Pro:400,700,900"
           rel="stylesheet"
           type="text/css"
