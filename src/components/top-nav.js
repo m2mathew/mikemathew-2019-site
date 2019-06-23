@@ -6,13 +6,22 @@ import { makeStyles } from '@material-ui/styles';
 import NavLink from './nav-link';
 
 // Local Variables
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   linkContainer: {
+    [theme.breakpoints.down('sm')]: {
+      height: 44,
+    },
     alignItems: 'flex-end',
     display: 'flex',
     height: 52,
   },
   list: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '13px',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '16px',
+    },
     display: 'flex',
     fontSize: '18px',
     listStyle: 'none',
@@ -31,7 +40,7 @@ const useStyles = makeStyles({
     top: 0,
     zIndex: 250,
   },
-});
+}));
 
 // Component Definition
 const TopNav = (props) => {
