@@ -14,11 +14,11 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const PrestoJune2019Image = () => (
+const TmacJune2019Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "presto-june-2019.png" }) {
+        placeholderImage: file(relativePath: { eq: "tmac-june-2019.png" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
@@ -35,4 +35,4 @@ const PrestoJune2019Image = () => (
     )}
   />
 );
-export default PrestoJune2019Image;
+export default TmacJune2019Image;

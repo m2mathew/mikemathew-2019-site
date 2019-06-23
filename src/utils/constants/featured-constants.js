@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Internal Dependencies
-// import AboutPresto from '../../components/about-presto';
 import PrestoJune2019Image from '../../components/images/presto-june-2019-image';
+import TmacJune2019Image from '../../components/images/tmac-june-2019-image';
 
 // Local Variables
 export const featuredData = [
@@ -33,7 +33,7 @@ export const featuredData = [
       'Contentful',
       'Google Sheets API',
     ],
-    image: <PrestoJune2019Image />,
+    image: <TmacJune2019Image />,
     link: 'https://www.texasmusicadmin.com/',
     title: 'Texas Music Administrators Conference',
   },
