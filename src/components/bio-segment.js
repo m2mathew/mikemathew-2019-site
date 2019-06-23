@@ -27,7 +27,7 @@ const defaultProps = {
   strong: false,
 };
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   bullet: {
     fontWeight: 400,
     margin: '0 10px',
@@ -39,6 +39,12 @@ const useStyles = makeStyles({
     marginTop: 16,
   },
   root: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: 18,
+    },
     fontSize: 20,
     fontWeight: 200,
     textTransform: 'uppercase',
@@ -46,7 +52,7 @@ const useStyles = makeStyles({
   strong: {
     fontWeight: 600,
   },
-});
+}));
 
 // Component Definition
 const BioSegment = (props) => {

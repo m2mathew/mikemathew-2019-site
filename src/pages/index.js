@@ -1,6 +1,5 @@
 // External Dependencies
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
@@ -15,6 +14,12 @@ import { featuredData } from '../utils/constants/featured-constants';
 // Local Variables
 const useStyles = makeStyles(theme => ({
   bioContainer: {
+    [theme.breakpoints.down('sm')]: {
+      lineHeight: 2.2,
+    },
+    [theme.breakpoints.up('md')]: {
+      lineHeight: 2.5,
+    },
     borderBottom: `10px solid ${theme.palette.grey[500]}`,
     lineHeight: 3,
     marginBottom: 24,

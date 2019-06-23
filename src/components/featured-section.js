@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     },
     display: 'flex',
     justifyContent: 'space-between',
-    marginBottom: '2rem',
+    marginBottom: '3rem',
   },
   featuredImageContainer: {
     [theme.breakpoints.down('sm')]: {
