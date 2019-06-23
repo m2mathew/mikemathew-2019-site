@@ -37,7 +37,6 @@ module.exports = {
         //   injectFirst: true,
         // },
       },
-      // 'gatsby-plugin-styled-components',
     },
     'gatsby-plugin-react-helmet',
     // this (optional) plugin enables Progressive Web App + Offline functionality
