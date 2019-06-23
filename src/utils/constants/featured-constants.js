@@ -3,6 +3,7 @@ import React from 'react';
 
 // Internal Dependencies
 import PrestoJune2019Image from '../../components/images/presto-june-2019-image';
+import ReactUserGroupJune2019Image from '../../components/images/react-user-group-june-2019-image';
 import TmacJune2019Image from '../../components/images/tmac-june-2019-image';
 
 // Local Variables
@@ -36,5 +37,18 @@ export const featuredData = [
     image: <TmacJune2019Image />,
     link: 'https://www.texasmusicadmin.com/',
     title: 'Texas Music Administrators Conference',
+  },
+  {
+    about: <span>The ReactJS Dallas User Group has been going strong since March 2016. For one of my talks about dealing with "Gatsby Gotchas", I spun up a Gatsby site and deployed it on Netlify in only a few minutes. It was magical! <span>🦄</span> The site is open-source under the ReactJS Dallas repository, so hopefully our community can help keep it running!</span>,
+    builtWith: [
+      'ReactJS',
+      'GatsbyJS',
+      'Material-UI',
+      'Firebase',
+      'Netlify',
+    ],
+    image: <ReactUserGroupJune2019Image />,
+    link: 'https://www.reactjsdallas.com/',
+    title: 'ReactJS Dallas User Group',
   },
 ];

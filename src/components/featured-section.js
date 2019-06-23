@@ -77,19 +77,6 @@ const FeaturedSection = (props) => {
         <Typography>
           {about}
         </Typography>
-        <Typography
-          className={classes.featuredBuiltTile}
-          variant="subtitle1"
-        >
-          Built With
-        </Typography>
-        <Typography>
-          {builtWith.map((tech, index) => (
-            <span key={tech}>
-              {tech}{index < builtWith.length - 1 && ' / '}
-            </span>
-          ))}
-        </Typography>
         <Button
           classes={{
             containedPrimary: classes.containedPrimary,
@@ -103,6 +90,19 @@ const FeaturedSection = (props) => {
         >
           Visit Website
         </Button>
+        <Typography
+          className={classes.featuredBuiltTile}
+          variant="subtitle1"
+        >
+          Built With
+        </Typography>
+        <Typography>
+          {builtWith.map((tech, index) => (
+            <span key={tech}>
+              {tech}{index < builtWith.length - 1 && ' / '}
+            </span>
+          ))}
+        </Typography>
       </div>
       <div className={classes.featuredImageContainer}>
         {image}
