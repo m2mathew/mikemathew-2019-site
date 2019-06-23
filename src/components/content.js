@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    margin: '4.5rem auto 0',
+    margin: '1rem auto 0',
   },
 }));
 

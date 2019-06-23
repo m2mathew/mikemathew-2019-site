@@ -4,7 +4,7 @@ import React from 'react';
 // Internal Dependencies
 import Content from './content';
 import Footer from './footer';
-import Header from './header';
+import Header from './header-block';
 import TopNav from './top-nav';
 
 // Component Definition

@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'column',
-    margin: '1.5rem 0 1rem',
+    margin: '6rem 0 1rem',
     width: '100%',
   },
   subtitle: {
