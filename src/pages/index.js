@@ -62,6 +62,7 @@ const IndexPage = (props) => {
           builtWith={app.builtWith}
           image={app.image}
           key={app.title}
+          link={app.link}
           title={app.title}
         />
       ))}

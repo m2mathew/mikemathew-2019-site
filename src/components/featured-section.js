@@ -1,4 +1,5 @@
 // External Dependencies
+import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
@@ -8,6 +9,13 @@ import { makeStyles } from '@material-ui/styles';
 
 // Local Variables
 const useStyles = makeStyles(theme => ({
+  buttonRoot: {
+    color: theme.palette.common.white,
+    margin: '10px 10px 10px 0',
+  },
+  containedPrimary: {
+    background: `linear-gradient(160deg, rebeccapurple 30%, #280154 90%)`,
+  },
   featuredBuiltTile: {
     fontWeight: 600,
     margin: '0.8rem 0',
@@ -49,6 +57,7 @@ const FeaturedSection = (props) => {
     about,
     builtWith,
     image,
+    link,
     title,
   } = props;
   const classes = useStyles(props);
@@ -65,7 +74,9 @@ const FeaturedSection = (props) => {
         >
           {title}
         </Typography>
-        {about}
+        <Typography>
+          {about}
+        </Typography>
         <Typography
           className={classes.featuredBuiltTile}
           variant="subtitle1"
@@ -79,6 +90,19 @@ const FeaturedSection = (props) => {
             </span>
           ))}
         </Typography>
+        <Button
+          classes={{
+            containedPrimary: classes.containedPrimary,
+            root: classes.buttonRoot,
+          }}
+          color="primary"
+          href={link}
+          rel="noopener referrer"
+          target="_blank"
+          variant="contained"
+        >
+          Visit Website
+        </Button>
       </div>
       <div className={classes.featuredImageContainer}>
         {image}
@@ -91,6 +115,7 @@ FeaturedSection.propTypes = {
   about: PropTypes.node.isRequired,
   builtWith: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   image: PropTypes.node.isRequired,
+  link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 

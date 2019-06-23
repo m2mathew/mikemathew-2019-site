@@ -134,7 +134,7 @@ const Resume = (props) => {
           Texas Music Administrators Conference
         </Typography>
         <Typography className={classes.indent}>
-          In 2018 I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it!
+          I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it, and I still am their "webmaster" for the foreseeable future! <span>🤓</span>
         </Typography>
         <Typography
           className={classes.subtitle}
