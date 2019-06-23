@@ -3,7 +3,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 // Internal Dependencies
-import Header from '../components/header';
 import SEO from '../components/seo';
 import SpeakingSection from '../components/speaking-section';
 import Subtitle from '../components/subtitle';
@@ -24,7 +23,6 @@ const Speaking = (props) => {
   return (
     <>
       <SEO title="Speaking" />
-      <Header />
       <Subtitle>Speaking</Subtitle>
       <SpeakingSection
         title="Upcoming"

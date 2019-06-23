@@ -5,7 +5,6 @@ import { makeStyles } from '@material-ui/styles';
 // Internal Dependencies
 import BioSegment from '../components/bio-segment';
 import FeaturedSection from '../components/featured-section';
-import Header from '../components/header';
 import SEO from '../components/seo';
 import Subtitle from '../components/subtitle';
 import { bioPhrases } from '../utils/constants/home-constants';
@@ -59,7 +58,6 @@ const IndexPage = (props) => {
   return (
     <>
       <SEO title="Home" />
-      <Header />
       <div className={classes.bioContainer}>
         {getBioSegments(bioPhrases)}
       </div>
