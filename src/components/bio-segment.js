@@ -80,8 +80,8 @@ const BioSegment = (props) => {
       {image
         ? (
           <Link
-            // href="#"
             onClick={toggleDialog}
+            to="/"
           >
             {children}
           </Link>
