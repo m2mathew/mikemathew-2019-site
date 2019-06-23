@@ -20,6 +20,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('md')]: {
       lineHeight: 2.5,
     },
+    [theme.breakpoints.up('lg')]: {
+      lineHeight: 3,
+    },
     borderBottom: `10px solid ${theme.palette.grey[500]}`,
     lineHeight: 3,
     marginBottom: 24,

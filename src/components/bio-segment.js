@@ -39,11 +39,14 @@ const useStyles = makeStyles(theme => ({
     marginTop: 16,
   },
   root: {
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       fontSize: 16,
     },
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: 18,
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: 20,
     },
     fontSize: 20,
     fontWeight: 200,
