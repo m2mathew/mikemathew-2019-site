@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/styles';
 // Local Variables
 const useStyles = makeStyles({
   past: {
-    borderLeft: '4px solid #CF64C8',
+    borderLeft: '4px solid navy',
   },
   recent: {
     borderLeft: '4px solid #FDD269',
