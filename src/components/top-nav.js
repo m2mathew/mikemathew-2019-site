@@ -58,6 +58,9 @@ const TopNav = (props) => {
           <NavLink to="/speaking/">
             speaking
           </NavLink>
+          <NavLink to="/netlify/">
+            netlify is cool
+          </NavLink>
         </ul>
       </div>
     </nav>
