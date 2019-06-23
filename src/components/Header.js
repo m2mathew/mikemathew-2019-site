@@ -1,5 +1,4 @@
 // External Dependencies
-import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
@@ -81,12 +80,6 @@ const Header = (props) => {
       </div>
     </div>
   );
-};
-
-Header.propTypes = {
-  classes: PropTypes.shape({
-    root: PropTypes.string.isRequired,
-  }),
 };
 
 export default Header;

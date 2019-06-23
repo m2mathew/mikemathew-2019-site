@@ -1,5 +1,4 @@
 // External Dependencies
-import PropTypes from 'prop-types';
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
@@ -54,14 +53,6 @@ const TopNav = (props) => {
       </div>
     </nav>
   );
-};
-
-TopNav.propTypes = {
-  classes: PropTypes.shape({
-    linkContainer: PropTypes.string.isRequired,
-    list: PropTypes.string.isRequired,
-    root: PropTypes.string.isRequired,
-  }),
 };
 
 export default TopNav;
