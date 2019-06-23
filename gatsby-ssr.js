@@ -1,7 +1,4 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+// Internal Dependencies
+import wrapWithLayout from './src/wrap-with-layout';
 
-// You can delete this file if you're not using it
+export const wrapPageElement = wrapWithLayout;
