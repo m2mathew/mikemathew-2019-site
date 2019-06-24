@@ -5,6 +5,13 @@ module.exports = {
     author: 'Mike Mathew',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-custom-gosquared',
+      options: {
+        anonymizeIp: true,
+        token: 'GSN-329406-K',
+      },
+    },
     'gatsby-plugin-top-layout',
     {
       resolve: 'gatsby-source-filesystem',
