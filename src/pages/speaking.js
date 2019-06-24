@@ -45,6 +45,9 @@ const Speaking = (props) => {
           <li>
             ReactJS Dallas @ DevMountain, May 2019, Dallas, TX, "React 101"
           </li>
+          <li>
+            ReactJS Dallas @ Robert Half, February 2019, Addison, TX, "Material-UI Tips and Tricks"
+          </li>
         </ul>
       </SpeakingSection>
       <SpeakingSection
