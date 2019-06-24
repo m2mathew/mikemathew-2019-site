@@ -1,3 +1,7 @@
+require('dotenv').config({
+
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Mike Mathew Portfolio',
@@ -5,14 +9,14 @@ module.exports = {
     author: 'Mike Mathew',
   },
   plugins: [
+    'gatsby-plugin-top-layout',
     {
       resolve: 'gatsby-plugin-custom-gosquared',
       options: {
         anonymizeIp: true,
-        token: 'GSN-329406-K',
+        token: process.env.GATSBY_GOSQUARED_TOKEN,
       },
     },
-    'gatsby-plugin-top-layout',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
