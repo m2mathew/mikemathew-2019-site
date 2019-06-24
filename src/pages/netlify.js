@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
       width: '50%',
     },
     [theme.breakpoints.up('md')]: {
-      width: '30%',
+      width: '50%',
     },
     border: '2px solid darkgrey',
     borderRadius: 5,
@@ -78,7 +78,7 @@ const NetlifyPage = (props) => {
           <strong>We were truly living in dark times.</strong>
         </Typography>
         <Typography className={classes.paragraph}>
-          But some very smart people figured out a way to make it easier to send files away to a far-away computer to make the website available very quickly. The webmaster's life would be so much easier henceforth.
+          But some very smart people figured out a way to make it easier to send files to a far-away computer to make a website available very quickly. The webmaster's life would be so much easier henceforth. Thanks, Netlify!
         </Typography>
         <div className={classes.imageWrapper}>
           <NetlifyBlurbImage />
