@@ -39,6 +39,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-gosquared`,
+      options: {
+        token: 'GSN-329406-K',
+        anonymizeIP: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
