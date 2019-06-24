@@ -611,6 +611,10 @@ pre tt:after {
   content: "";
 }
 
+a .link {
+  color: #34B2BB;
+}
+
 .netlify-logo {
   animation: netlify-logo-spin infinite 20s linear;
   height: 24vmin;
