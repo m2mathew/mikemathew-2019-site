@@ -1,4 +1,7 @@
 // External Dependencies
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 
@@ -8,14 +11,19 @@ import SpeakingSection from '../components/speaking-section';
 import Subtitle from '../components/subtitle';
 
 // Local Variables
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   emoji: {
-    fontSize: 24,
     display: 'inline-block',
+    fontSize: 24,
     marginTop: 12,
     transform: 'rotate(15deg)',
   },
-});
+  list: {
+    backgroundColor: theme.palette.background.paper,
+    maxWidth: 360,
+    width: '100%',
+  },
+}));
 
 // Component Definition
 const Speaking = (props) => {
@@ -35,56 +43,116 @@ const Speaking = (props) => {
       <SpeakingSection
         title="Recent"
       >
-        <ul>
-          <li>
-            DevMountain Fireside Chat, June 2019, Dallas, TX
-          </li>
-          <li>
-            ReactJS Dallas @ Call-Em-All, June 2019, Frisco, TX, "React 102"
-          </li>
-          <li>
-            ReactJS Dallas @ DevMountain, May 2019, Dallas, TX, "React 101"
-          </li>
-          <li>
-            ReactJS Dallas @ Robert Half, February 2019, Addison, TX, "Material-UI Tips and Tricks"
-          </li>
-        </ul>
+        <List dense>
+          <ListItem divider>
+            <ListItemText
+              primary="DevMountain Fireside Chat"
+              secondary="June 2019, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"React 102", ReactJS Dallas @ Call-Em-All`}
+              secondary="June 2019, Frisco, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"React 101", ReactJS Dallas @ DevMountain`}
+              secondary="May 2019, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary={`"Material-UI Tips and Tricks", ReactJS Dallas @ Robert Half`}
+              secondary="February 2019, Addison, TX"
+            />
+          </ListItem>
+        </List>
       </SpeakingSection>
       <SpeakingSection
         title="Past"
       >
-        <ul>
-          <li>
-            ReactJS Dallas @ TailLight, December 2017, Addison, TX, "Open Source Noobs Welcome"
-          </li>
-          <li>
-            ReactJS Dallas @ Call-Em-All, October 2017, Frisco, TX, "Intro to React 16"
-          </li>
-          <li>
-            TechTalentSouth, September 2017, Guest Speaker, Dallas, TX
-          </li>
-          <li>
-            Richardson ISD Creative Coders Camp, June 2017, Guest Career Speaker, Richardson, TX
-          </li>
-          <li>
-            The Iron Yard-Dallas, May 2017, Guest Speaker, Dallas, TX
-          </li>
-          <li>
-            ReactJS Dallas @ Coding Dojo, April 2017, Speaker, Dallas, TX, "React 101"
-          </li>
-          <li>
-            ReactJS Dallas @ The Iron Yard, January 2017, Speaker, Dallas, TX, "React 101"
-          </li>
-          <li>
-            The Iron Yard-Dallas Abroad, July 2016, Speaker, McKinney, TX, "JavaScript for Beginners"
-          </li>
-          <li>
-            Richardson ISD Creative Coders Camp, June 2016, Guest Career Speaker, Richardson, TX
-          </li>
-          <li>
-            CANHacks High School Hackathon, July 2015, Judge, Dallas, TX
-          </li>
-        </ul>
+        <List dense>
+          <ListItem divider>
+            <ListItemText
+              primary={`"Gatsby Gotchas", ReactJS Dallas @ Dialexa`}
+              secondary="September 2018, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"React 101", ReactJS Dallas @ DevMountain`}
+              secondary="July 2018, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"Shallow Dive into React 16.3", ReactJS Dallas @ Buchanan Technologies`}
+              secondary="April 2018, Grapevine, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"Open Source Noobs Welcome", ReactJS Dallas @ TailLight`}
+              secondary="December 2017, Addison, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"Intro to React 16", ReactJS Dallas @ Call-Em-All`}
+              secondary="October 2017, Frisco, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary="TechTalentSouth, Guest Speaker"
+              secondary="September 2017, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary="Richardson ISD Creative Coders Camp, Guest Careeer Speaker"
+              secondary="June 2017, Richardson, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary="Guest Speaker, The Iron Yard-Dallas"
+              secondary="May 2017, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"React 101", ReactJS Dallas @ Coding Dojo`}
+              secondary="April 2017, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"React 101", ReactJS Dallas @ The Iron Yard`}
+              secondary="January 2017, Dallas, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary={`"JavaScript for Beginners", The Iron Yard-Dallas Abroad`}
+              secondary="July 2016, McKinney, TX"
+            />
+          </ListItem>
+          <ListItem divider>
+            <ListItemText
+              primary="Richardson ISD Creative Coders Camp, Guest Career Speaker"
+              secondary="June 2016, Richardson, TX"
+            />
+          </ListItem>
+          <ListItem>
+            <ListItemText
+              primary="CANHacks High School Hackathon Adjudicator, Nod Coworking Space"
+              secondary="July 2015, Dallas, TX"
+            />
+          </ListItem>
+        </List>
       </SpeakingSection>
     </>
   );
