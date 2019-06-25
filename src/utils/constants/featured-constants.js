@@ -9,10 +9,10 @@ import TmacJune2019Image from '../../components/images/tmac-june-2019-image';
 // Local Variables
 export const featuredData = [
   {
-    about: <span>Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. This is built with <span>❤️</span> for teachers to enable them to spend more time teaching!</span>,
+    about: <span>Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. My business partner and I built Presto with <span>❤️</span> for teachers to enable them to spend more time doing what they love—teaching!</span>,
     builtWith: [
       'ReactJS',
-      'node',
+      'NodeJS',
       'Material-UI',
       'Netlify',
       'Heroku',

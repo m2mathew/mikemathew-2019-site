@@ -123,7 +123,7 @@ const Resume = (props) => {
           Presto Assistant
         </Typography>
         <Typography className={classes.indent}>
-          Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. We hope to bring some joy to teachers and enable them to spend more time teaching!
+          Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. My business partner and I built Presto to bring some joy to teachers and enable them to spend more time teaching!
         </Typography>
         <Typography
           className={classes.subtitle}
@@ -132,7 +132,7 @@ const Resume = (props) => {
           Texas Music Administrators Conference
         </Typography>
         <Typography className={classes.indent}>
-          I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it, and I still am their "webmaster" for the foreseeable future! <span>🤓</span>
+          I designed, built, and shipped a website for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using ReactJS, GatsbyJS, Firebase, Contentful, and Google Sheets API. The members of the group love it, and I still am their "webmaster" for the foreseeable future! <span>🤓</span>
         </Typography>
         <Typography
           className={classes.subtitle}
@@ -150,7 +150,7 @@ const Resume = (props) => {
           Drumr
         </Typography>
         <Typography className={classes.indent}>
-          Now defunct, alas. Drumr was my final project at The Iron Yard code school. It used React, Backbone, Parse, Sass, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
+          Now defunct, alas. Drumr was my final project at The Iron Yard code school. It used ReactJS, BackboneJS, Parse, Sass, and Masonry. This app provided a searchable database for users to find drummers, add new drummers, or add existing drummers to a favorites list.
         </Typography>
         <Typography
           className={classes.subtitle}
