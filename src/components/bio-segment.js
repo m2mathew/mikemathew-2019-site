@@ -8,9 +8,6 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import { makeStyles } from '@material-ui/styles';
 
-// Internal Dependencies
-import Link from './link';
-
 // Local Variables
 const propTypes = {
   children: PropTypes.string.isRequired,
@@ -37,6 +34,14 @@ const useStyles = makeStyles(theme => ({
   },
   dialogText: {
     marginTop: 16,
+  },
+  link: {
+    '&:hover': {
+      borderBottom: '2px solid lightcoral',
+    },
+    color: 'lightcoral',
+    cursor: 'pointer',
+    fontWeight: 400,
   },
   root: {
     [theme.breakpoints.down('xs')]: {
@@ -88,12 +93,15 @@ const BioSegment = (props) => {
       {!isFirst && <span className={classes.bullet}>&bull;</span>}
       {image
         ? (
-          <Link
+          <span
+            className={classes.link}
             onClick={toggleDialog}
-            to="/"
+            onKeyDown={toggleDialog}
+            role="button"
+            tabIndex={0}
           >
             {children}
-          </Link>
+          </span>
         )
         : children}
       {image && (
