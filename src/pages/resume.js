@@ -123,7 +123,7 @@ const Resume = (props) => {
           Presto Assistant
         </Typography>
         <Typography className={classes.indent}>
-          Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. We hope to bring some joy to teachers and enable them to spend more time teaching!
+          Presto is built to help fine arts teachers organize their administrative tasks. Parents, students, and administrators can also use Presto to access data about the programs, pay fees, submit forms, and more. My business partner and I built Presto to bring some joy to teachers and enable them to spend more time teaching!
         </Typography>
         <Typography
           className={classes.subtitle}
