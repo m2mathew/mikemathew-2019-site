@@ -5,8 +5,6 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 
-// Internal Dependencies
-
 // Local Variables
 const useStyles = makeStyles(theme => ({
   buttonRoot: {
@@ -77,19 +75,23 @@ const FeaturedSection = (props) => {
         <Typography>
           {about}
         </Typography>
-        <Button
-          classes={{
-            containedPrimary: classes.containedPrimary,
-            root: classes.buttonRoot,
-          }}
-          color="primary"
-          href={link}
-          rel="noopener referrer"
-          target="_blank"
-          variant="contained"
-        >
-          Visit Website
-        </Button>
+
+        {link && (
+          <Button
+            classes={{
+              containedPrimary: classes.containedPrimary,
+              root: classes.buttonRoot,
+            }}
+            color="primary"
+            href={link}
+            rel="noopener referrer"
+            target="_blank"
+            variant="contained"
+          >
+            Visit Website
+          </Button>
+        )}
+
         <Typography
           className={classes.featuredBuiltTile}
           variant="subtitle1"
