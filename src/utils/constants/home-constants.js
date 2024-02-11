@@ -57,7 +57,7 @@ export const bioPhrases = [
   {
     text: 'Get married to your high school sweetheart',
     image: <MichaelAndMelissaImage />,
-    dialogText: 'Melissa and I were married in December 2000 after dating since high school! Still going strong with a great family!',
+    dialogText: 'Melissa and I were married in December 2000 after dating since high school. Still going strong with a great family!',
   },
   {
     text: 'Graduate college and teach music for over a decade',
@@ -84,7 +84,7 @@ export const bioPhrases = [
   {
     text: 'Become the guardian for your little brother',
     image: <MichaelAndStephenTmea2019Image />,
-    dialogText: 'Michael and Stephen meet up in the Exhibit Hall at the 2019 Texas Music Educators Association convention in San Antonio, TX. Stephen works as a Marketing Strategist for the Dynasty/Titan instrument company.',
+    dialogText: 'Michael and Stephen meet up in the Exhibit Hall at the 2019 Texas Music Educators Association convention in San Antonio, TX. Stephen has worked in marketing for music companies.',
   },
   {
     text: 'Start learning more code',
@@ -102,12 +102,12 @@ export const bioPhrases = [
   {
     text: 'Work at an awesome company',
     image: <MikeThumbsUpImage />,
-    dialogText: 'At Call-Em-All I have learned and leveled up in my front end skills. The team created the popular open source library Material-UI, so I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
+    dialogText: 'At Call-Em-All (now Text-Em-All) I have learned and leveled up in technical skills. The team created the popular open source library Material-UI (MUI). I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
   },
   {
     text: 'Help others learn and stay connected',
     image: <ReactMeetupMarch2016MikeImage />,
-    dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas where we routinely visit local companies like Intuit, Match, and many more. Our members love to connect with each other over code and pizza. Our events have helped a lot of people find jobs, too!',
+    dialogText: 'Since Feb 2016 I have served as the main organizer for the ReactJS Dallas User Group. We have built a great community around ReactJS in Dallas where we routinely visit local company offices like Intuit, Match, The Container Store, and many more. Our members love to connect with each other over code and pizza. Our events help a lot of people find jobs, too!',
   },
   {
     text: 'Keep learning and making awesome things',

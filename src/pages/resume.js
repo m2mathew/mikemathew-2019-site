@@ -98,13 +98,13 @@ const Resume = (props) => {
           className={classes.subtitle}
           variant="subtitle1"
         >
-          Front End Developer (December 2015-present)
+          Senior Software Engineer (December 2015-present)
         </Typography>
         <Typography className={classes.indent}>
           Call-Em-All - Frisco, Texas
         </Typography>
         <Typography className={classes.indent}>
-          Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the technical level. Primarily using ReactJS, Material-UI, and node. All team members work to contribute to the entire customer experience. Spent time as Product Owner and Project Manager.
+          Primarily work on engineering team to develop the next iteration of the desktop client application. Help solve customer support issues that arise on the technical level. Primarily using ReactJS, Material-UI, and node. All team members work to contribute to the entire customer experience. Spent time as Product Owner and Project Manager, now helping level-up other team members through mentoring and architecture design.
         </Typography>
       </ResumeSection>
 
@@ -145,14 +145,14 @@ const Resume = (props) => {
           ReactJS Dallas User Group
         </Typography>
         <Typography className={classes.indent}>
-          Since February 2016, I have served as the main organizer for all of the ReactJS Dallas events. We meet in various venues around the Dallas area. I also organize speakers and sponsors and sometimes even give a talk myself. Attending React meetups consistently for three years is a great way to learn new things!
+          Since February 2016, I have served as the main organizer for all of the ReactJS Dallas events. We meet in various venues around the Dallas area. I also organize speakers and sponsors and sometimes even give a talk myself. Attending React meetups consistently for all of these years is a great way to learn new things.
         </Typography>
 
         <Typography
           className={classes.subtitle}
           variant="subtitle1"
         >
-          Texas Music Administrators Conference
+          Texas Music Administrators Conference (TMAC)
         </Typography>
         <Typography className={classes.indent}>
           I designed, built, shipped, and maintained a website and technology stack for the TMAC organization. This group consists of the Fine Arts administrators across the state of Texas. The website was built using ReactJS, GatsbyJS, Firebase, Contentful, and Google Sheets API.
@@ -188,7 +188,7 @@ const Resume = (props) => {
           The Mathew Group
         </Typography>
         <Typography className={classes.indent}>
-          From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver CMS and basic HTML and CSS. This is what got me hooked on making internet websites!
+          From 2005 to 2014, I designed and implemented websites for local high school band programs using Rapidweaver CMS and basic HTML and CSS. This is what got me hooked on making internet websites.
         </Typography>
       </ResumeSection>
     </>

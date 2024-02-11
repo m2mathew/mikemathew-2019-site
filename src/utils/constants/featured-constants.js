@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Internal Dependencies
-import PrestoJune2019Image from '../../components/images/presto-june-2019-image';
+import PrestoFeb2024Image from '../../components/images/presto-feb-2024-image';
 import ReactUserGroupJune2019Image from '../../components/images/react-user-group-june-2019-image';
 import TmacJune2019Image from '../../components/images/tmac-june-2019-image';
 
@@ -17,13 +17,17 @@ export const featuredData = [
       'Netlify',
       'Heroku',
       'PostgreSQL',
+      'Redis',
+      'Firebase',
+      'Stripe',
+      'Vanco',
     ],
-    image: <PrestoJune2019Image />,
+    image: <PrestoFeb2024Image />,
     link: 'https://www.presto-assistant.com/',
     title: 'Presto Assistant',
   },
   {
-    about: <span>The TMAC website is built to present information about what the organization does and to provide members with a way to securely log in and pay dues. This Gatsby site is kept in sync with a Firebase Realtime database. That data store is synced to a several Google Sheets in a two-way sync. It's been really fun to build and useful to the members!</span>,
+    about: <span>The TMAC website provides information about what the organization does and gives members a way to securely sign in and pay dues. This Gatsby site is kept in sync with a Firebase Realtime database. That data store is synced to a several Google Sheets in a two-way sync. It's been really fun to build and useful to the members!</span>,
     builtWith: [
       'ReactJS',
       'GatsbyJS',
@@ -35,7 +39,6 @@ export const featuredData = [
       'Google Sheets API',
     ],
     image: <TmacJune2019Image />,
-    link: 'https://www.texasmusicadmin.com/',
     title: 'Texas Music Administrators Conference',
   },
   {

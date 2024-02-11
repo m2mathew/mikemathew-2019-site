@@ -58,17 +58,20 @@ const IndexPage = (props) => {
   return (
     <>
       <SEO title="Home" />
+
       <div className={classes.bioContainer}>
         {getBioSegments(bioPhrases)}
       </div>
+
       <Subtitle>Some of my work</Subtitle>
+
       {featuredData.map(app => (
         <FeaturedSection
           about={app.about}
           builtWith={app.builtWith}
           image={app.image}
           key={app.title}
-          link={app.link}
+          link={app?.link}
           title={app.title}
         />
       ))}

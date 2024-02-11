@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   listItemText: {
-    fontSize: 30,
+    fontSize: '1rem',
   },
 });
 
