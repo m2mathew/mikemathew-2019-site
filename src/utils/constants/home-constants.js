@@ -10,6 +10,7 @@ import MichaelAndStephenTmea2019Image from '../../components/images/michael-and-
 import MikeThumbsUpImage from '../../components/images/mike-thumbs-up-image';
 import ReactMeetupMarch2016MikeImage from '../../components/images/react-meetup-march-2016-mike-image';
 import TrinityPasicImage from '../../components/images/trinity-pasic-image';
+import PrestoTmeaBoothImage from '../../components/images/2025-presto-tmea-booth';
 
 // Local Variables
 export const bioPhrases = [
@@ -102,7 +103,12 @@ export const bioPhrases = [
   {
     text: 'Work at an awesome company',
     image: <MikeThumbsUpImage />,
-    dialogText: 'At Call-Em-All (now Text-Em-All) I have learned and leveled up in technical skills. The team created the popular open source library Material-UI (MUI). I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
+    dialogText: 'At Text-Em-All I have learned and leveled up in technical skills. The team created the popular open source library Material UI (MUI). I have used that library every day for years. Also, as a Small Giants company, we enjoy a good deal of transparency into how all aspects of the company are run. I have mentored several interns and even worked as a Product Owner and Project Manager. Good times!',
+  },
+  {
+    text: 'Start my own company Presto Assistant to help fine arts teachers',
+    image: <PrestoTmeaBoothImage />,
+    dialogText: 'Presto Assistant builds tools for fine arts teachers all over the United States. For me, the work is a perfect connection between my love of teaching and my love of coding. We have built a great team to help us build the best tools for teachers!',
   },
   {
     text: 'Help others learn and stay connected',

@@ -13,14 +13,16 @@ export const featuredData = [
     builtWith: [
       'ReactJS',
       'NodeJS',
-      'Material-UI',
+      'Material UI',
       'Netlify',
       'Heroku',
       'PostgreSQL',
       'Redis',
       'Firebase',
       'Stripe',
-      'Vanco',
+      'Vanco RevTrak',
+      'Sentry',
+
     ],
     image: <PrestoFeb2024Image />,
     link: 'https://www.presto-assistant.com/',
