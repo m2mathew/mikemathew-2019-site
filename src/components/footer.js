@@ -5,10 +5,13 @@ import { makeStyles } from '@material-ui/styles';
 // Internal Dependencies
 import GithubImage from '../components/images/github-image';
 import LinkedInImage from '../components/images/linkedin-image';
-import TwitterImage from '../components/images/twitter-image';
 
 // Local Variables
 const useStyles = makeStyles(theme => ({
+  anchor: {
+    textDecoration: 'none',
+    fontSize: 24,
+  },
   image: {
     [theme.breakpoints.down('xs')]: {
       height: 20,
@@ -38,6 +41,7 @@ const useStyles = makeStyles(theme => ({
 // Component Definition
 const Footer = (props) => {
   const classes = useStyles(props);
+
   return (
     <footer className={classes.root}>
       <div className={classes.imageLinkContainer}>
@@ -46,17 +50,23 @@ const Footer = (props) => {
             <GithubImage />
           </a>
         </div>
+
         <div className={classes.image}>
           <a href="https://www.linkedin.com/in/m2mathew/">
             <LinkedInImage />
           </a>
         </div>
+
         <div className={classes.image}>
-          <a href="https://twitter.com/drumsensei/">
-            <TwitterImage />
+          <a
+            className={classes.anchor}
+            href="/richland/index.html"
+          >
+            🚀
           </a>
         </div>
       </div>
+
       <div>
         &copy; {new Date().getFullYear()}{' '}Mike Mathew
       </div>

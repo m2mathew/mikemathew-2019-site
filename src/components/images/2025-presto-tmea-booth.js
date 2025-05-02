@@ -14,13 +14,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
-const TwitterImage = () => (
+const PrestoTmeaBoothImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "twitter.png" }) {
+        placeholderImage: file(relativePath: { eq: "2025-presto-tmea-booth.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -30,4 +30,4 @@ const TwitterImage = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default TwitterImage;
+export default PrestoTmeaBoothImage;
